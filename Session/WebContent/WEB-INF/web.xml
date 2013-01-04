@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <servlet>
+    <servlet-name>ServletSessionInfo</servlet-name>
+    <servlet-class>com.rose.Session.Servlet_Session_Info</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletSessionInfo</servlet-name>
+    <url-pattern>/ServletSessionInfo</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ServletSessionSnoop</servlet-name>
+    <servlet-class>com.rose.Session.Servlet_Session_Snoop</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServletSessionSnoop</servlet-name>
+    <url-pattern>/ServletSessionSnoop</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Servlet_Session_Max_Inactive_Interval_Create_Check</servlet-name>
+    <servlet-class>com.rose.Session.Servlet_Session_Max_Inactive_Interval_Create_Check</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Servlet_Session_Max_Inactive_Interval_Create_Check</servlet-name>
+    <url-pattern>/ServletInactiveIntervalCreateCheck</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>Event_Value_API_Sessionattributes_in_Servlet</servlet-name>
+  	<servlet-class>com.rose.Session.Event_Value_API_Sessionattributes_in_Servlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Event_Value_API_Sessionattributes_in_Servlet</servlet-name>
+  	<url-pattern>/EventValueAPISessionattributesinServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
