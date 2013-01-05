@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>ok,right</display-name>
+	<context-param>
+		<param-name>name</param-name>
+		<param-value>tqc</param-value>
+	</context-param>
+	<context-param>
+		<param-name>password</param-name>
+		<param-value>password</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>ServletStaticFieldAsCounter</servlet-name>
+		<servlet-class>com.rose.Counter.Servlet_Static_Field_As_Counter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletStaticFieldAsCounter</servlet-name>
+		<url-pattern>/ServletStaticFieldAsCounter</url-pattern>
+	</servlet-mapping>
+	<listener>
+		<listener-class>com.rose.Counter.Servlet_HttpSessionListener</listener-class>
+	</listener>
+	<listener>
+		<listener-class>com.rose.Counter.Servlet_ContextAttributeListener</listener-class>
+	</listener>
+	<servlet>
+		<servlet-name>Get_Servlet_Context_InitParameter</servlet-name>
+		<servlet-class>com.rose.Counter.Get_Servlet_Context_InitParameter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Get_Servlet_Context_InitParameter</servlet-name>
+		<url-pattern>/GetServletContextInitParameter</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Deployment_Descriptor</servlet-name>
+		<servlet-class>com.rose.Counter.Deployment_Descriptor</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Deployment_Descriptor</servlet-name>
+		<url-pattern>/DeploymentDescriptor</url-pattern>
+	</servlet-mapping>
+</web-app>
